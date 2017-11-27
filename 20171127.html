@@ -10,7 +10,8 @@
 <style>
 	#header{height:150px;background-color:lightyellow;}
 	#article{height:450px;background-color:lightblue;}
-	#footer{height:75px;background-color:#e6e6e6;}
+	.column{float:left;width:50%;height:400px;text-align:center;}
+	#footer{clear:both;height:75px;background-color:#e6e6e6;}
 	#fox {height:380px;background-image:url(fox.jpg);text-align:center;color:#262673}
 
 </style>
@@ -21,9 +22,15 @@
 	</div>
 	<div id="article">
 		<h1>Article</h1>
-		<pre><p>Put your content here
-		加這個text-indent:20px;文字縮排</p>
+<pre><p>Put your content here
+加這個text-indent:20px;文字縮排
+下面column要分開  footer要加clear:both;</p>
 	</div>
+	<div class="column"><h1>Column1</h1><p>Put your content here</p>
+	</div>
+	<div class="column"><h1>Column2</h1><p>Put your content here</p>
+	</div>
+	
 	<div id="footer">
 	<h1>Footer</h1>	
 	<div id="fox">
